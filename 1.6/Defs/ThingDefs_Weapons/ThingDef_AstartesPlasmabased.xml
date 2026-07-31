@@ -31,9 +31,9 @@
       </skillRequirements>
     </recipeMaker>
     <costList>
-      <Steel>29</Steel>
-      <Plasteel>36</Plasteel>
-      <ComponentSpacer>4</ComponentSpacer>
+      <Steel>25</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <verbs>
       <li>
@@ -119,9 +119,9 @@
       </skillRequirements>
     </recipeMaker>
     <costList>
-      <Steel>52</Steel>
-      <Plasteel>67</Plasteel>
-      <ComponentSpacer>6</ComponentSpacer>
+      <Steel>28</Steel>
+      <Plasteel>36</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <verbs>
       <li>
