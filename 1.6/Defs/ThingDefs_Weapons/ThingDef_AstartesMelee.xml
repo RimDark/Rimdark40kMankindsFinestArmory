@@ -80,11 +80,6 @@
         <criticalHitChance>0.3</criticalHitChance>        <!-- Equals 30% chance -->
         <criticalHitDamageMultiplier>5</criticalHitDamageMultiplier>        <!-- Damage done is multiplied by 5 here so damage done to pawn that was 14 would become 70 (Im not doubting anyone maths skills, just for clarity xd) -->
       </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
-      </li>
     </modExtensions>
   </ThingDef>
 
@@ -169,11 +164,6 @@
       <li Class="Core40k.DefModExtension_BeheadingCut">
         <neckTargetingChance>0.5</neckTargetingChance>        <!-- Equals 50% chance -->
       </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
-      </li>
     </modExtensions>
   </ThingDef>
 
@@ -252,11 +242,6 @@
             <drawOffset>(0, 0, -0.15)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
-      </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
@@ -337,11 +322,6 @@
             <drawOffset>(0, 0, -0.15)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
-      </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
@@ -428,11 +408,6 @@
             <drawOffset>(0, 0, -0.15)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
-      </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
@@ -521,11 +496,6 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
-      </li>
     </modExtensions>
   </ThingDef>
 
@@ -594,11 +564,6 @@
             <drawOffset>(0, 0, -0.15)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
-      </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
@@ -681,11 +646,6 @@
             <drawOffset>(0, 0, -0.15)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
-      </li>
-      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
