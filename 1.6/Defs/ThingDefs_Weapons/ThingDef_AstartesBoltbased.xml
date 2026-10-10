@@ -108,9 +108,9 @@
     <statBases>
       <WorkToMake>46500</WorkToMake>
       <Mass>4.3</Mass>
-      <AccuracyTouch>0.5</AccuracyTouch>
-      <AccuracyShort>0.6</AccuracyShort>
-      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyTouch>0.43</AccuracyTouch>
+      <AccuracyShort>0.47</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
       <AccuracyLong>0.3</AccuracyLong>
     </statBases>
     <recipeMaker>
@@ -129,7 +129,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>BEWH_BolterRound</defaultProjectile>
         <warmupTime>0.88</warmupTime>
-        <range>32.9</range>
+        <range>28.9</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
         <soundCast>BEWH_SFX_BolterShot</soundCast>
@@ -192,9 +192,9 @@
     <statBases>
       <WorkToMake>46500</WorkToMake>
       <Mass>4.5</Mass>
-      <AccuracyTouch>0.48</AccuracyTouch>
-      <AccuracyShort>0.56</AccuracyShort>
-      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
       <AccuracyLong>0.48</AccuracyLong>
     </statBases>
     <recipeMaker>
@@ -498,6 +498,93 @@
     </modExtensions>
   </ThingDef>
 
+      <!-- Heavy Bolter -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesHeavyBolter</defName>
+    <label>heavy bolter</label>
+    <description>The Heavy Bolter, a heavy support weapon intended to deliver overwhelming firepower. It unleashes a relentless burst of large-caliber explosive bolts capable of tearing through infantry formations and punching through light armor with ease.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_AstartesHeavyBolter</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <uiIconScale>0.67</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.6</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+      <MeleeHitChance>-0.5</MeleeHitChance>
+		</equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>65</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_BolterRoundHeavy_explosive</defaultProjectile>
+        <warmupTime>3.3</warmupTime>
+        <range>32.9</range>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShotHeavy</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+        <forcedMissRadius>1.9</forcedMissRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>2</colorMaskAmount>
+        <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+      </li>
+      <li Class="Core40k.CompProperties_WeaponDecoration" />
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0.1, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <!-- <li>BEWH_WeaponDecoration</li> -->
+        </tabDefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
   <!-- Sniper Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Sniper</defName>
@@ -513,11 +600,11 @@
     <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>47000</WorkToMake>
-      <Mass>5.1</Mass>
-      <AccuracyTouch>0.15</AccuracyTouch>
+      <Mass>7.1</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
       <AccuracyShort>0.63</AccuracyShort>
-      <AccuracyMedium>0.86</AccuracyMedium>
-      <AccuracyLong>0.93</AccuracyLong>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.87</AccuracyLong>
       <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
@@ -535,8 +622,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>BEWH_HeavyBolterRound</defaultProjectile>
-        <warmupTime>1.7</warmupTime>
-        <range>50.9</range>
+        <warmupTime>2.3</warmupTime>
+        <range>46.5</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
         <soundCast>BEWH_SFX_BolterShotHeavy</soundCast>
@@ -570,6 +657,92 @@
             <drawOffset>(0, 1, -0.2)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- Assault Cannon -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesAssaultCannon</defName>
+    <label>assault cannon</label>
+    <description>A six-barrel rotary autocannon capable of delivering an overwhelming volume of fire. Most effective at close to medium range, its tremendous rate of fire tears through infantry and lightly armored targets alike.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_AstartesAssaultCannon</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.8</drawSize>
+    </graphicData>
+    <uiIconScale>0.6</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>47000</WorkToMake>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.18</AccuracyTouch>
+      <AccuracyShort>0.22</AccuracyShort>
+      <AccuracyMedium>0.24</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+      <MeleeHitChance>-0.5</MeleeHitChance>
+		</equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>75</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_AC_Projectile</defaultProjectile>
+        <warmupTime>2.7</warmupTime>
+        <range>34.9</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>36</burstShotCount>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>2</colorMaskAmount>
+        <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+      </li>
+      <li Class="Core40k.CompProperties_WeaponDecoration" />
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.1)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <!-- <li>BEWH_WeaponDecoration</li> -->
+        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
