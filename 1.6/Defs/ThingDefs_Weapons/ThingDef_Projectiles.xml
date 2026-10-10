@@ -120,9 +120,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>100</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <!-- <effectiveRange>20</effectiveRange>
@@ -152,9 +149,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>73</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <effectiveRange>18</effectiveRange>
@@ -184,9 +178,6 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>73</speed>
         </projectile>
-        <costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <effectiveRange>24</effectiveRange>
