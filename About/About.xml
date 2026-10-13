@@ -2,9 +2,10 @@
 <ModMetaData>
 	<name>RimDark 40k - Mankinds Finest: Armory</name>
 	<author>Phonicmas, Team RimDark</author>
-	<modVersion>1.0.4</modVersion>
+	<modVersion>1.0.5</modVersion>
 	<supportedVersions>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>Phonicmas.RimDark.MankindsFinest.Armory</packageId>
 	<description>
