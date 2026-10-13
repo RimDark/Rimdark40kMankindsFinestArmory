@@ -2,5 +2,6 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
+    <exclude>Armory_Weapon_Upgrades_Draft.md</exclude>
   </Excluded>
 </Configuration>
