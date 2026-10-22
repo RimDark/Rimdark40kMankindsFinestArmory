@@ -3,5 +3,7 @@
   <Excluded>
     <exclude>.git</exclude>
     <exclude>Armory_Weapon_Upgrades_Draft.md</exclude>
+    <exclude>CLAUDE.md</exclude>
+    <exclude>.claude</exclude>
   </Excluded>
 </Configuration>
