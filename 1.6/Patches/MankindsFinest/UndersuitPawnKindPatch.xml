@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Every super-soldier pawn kind (Space Marines, the Lost Strike Force scenario squad, Custodes, the Primarch,
+     and the ones Codex Rimperialis and Relics of Power add on this base) wears the undersuit under its armor
+     instead of the shirt and pants from BEWH_ImperiumPawnBase (both sit on the OnSkin layer). The child kinds'
+     own apparelRequired lists merge with this one, so their armor stays as it is. -->
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[@Name="BEWH_ImperiumSuperSoldierPawnBase"]</xpath>
+    <value>
+        <apparelRequired Inherit="False">
+            <li>BEWH_Undersuit</li>
+        </apparelRequired>
+    </value>
+</Operation>
+
+</Patch>
